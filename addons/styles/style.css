@@ -6,6 +6,7 @@
 html, body {
     height: 100%;
     width: 100%;
+    font-size: 16px;
 
 }
 
@@ -441,113 +442,54 @@ a {
     text-align: center;
 }
 
-/* PARTE DE RESPONSIVIDADE  */
 
-
+/* Media Queries */
 @media (max-width: 1024px) {
     #title-header {
-        font-size: 40px;
-        margin-top: 20px;
-        margin-bottom: 10px;
+        font-size: 2rem;
     }
 
     #nav-header {
-        font-size: 20px;
-        gap: 40px;
-    }
-
-    #img-instituto {
-        width: 100%;
-        height: auto;
+        font-size: 1rem;
+        gap: 10px;
     }
 
     #desc-sobre, #desc-atividades, #desc-eventos {
-        width: 90%;
-        padding-left: 20px;
-        font-size: 18px;
-    }
-
-    #sobre-nos, #atividades, #eventos {
-        width: 100%;
-        height: auto;
-    }
-
-    .card {
-        width: 90%;
-        height: auto;
-        margin: 10px auto;
-    }
-
-    .title-card1, .title-card2, .title-card3,
-    .desc-card1, .desc-card2, .desc-card3 {
-        font-size: 18px;
-        padding-left: 10px;
-    }
-
-    #button-card1, #button-card2, #button-card3 {
-        width: 90%;
-        margin-left: 0;
-    }
-
-    #footer, #contato {
-        padding: 10px;
-        text-align: center;
-    }
-
-    #endereco {
-        height: auto;
-        padding: 20px;
-    }
-
-    #title-endereco, #desc-endereco {
-        width: 100%;
-        padding-left: 10px;
-        font-size: 18px;
-    }
-
-    #nav-endereco {
-        justify-content: center;
-        padding-right: 0;
-    }
-
-    #botao-endereco {
-        width: 90%;
-    }
-}
-
-/* Responsividade para telas muito pequenas (celulares) */
-@media (max-width: 768px) {
-    #title-header {
-        font-size: 30px;
-    }
-
-    #nav-header {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    #desc-sobre, #desc-atividades, #desc-eventos {
-        font-size: 16px;
+        font-size: 0.9rem;
     }
 
     #botao-sobre, #botao-atividades, #botao-eventos {
         width: 100%;
-        height: 50px;
-        font-size: 16px;
+        height: auto;
+        font-size: 0.9rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #title-header {
+        font-size: 1.5rem;
+    }
+
+    #nav-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #desc-sobre, #desc-atividades, #desc-eventos {
+        font-size: 0.8rem;
+    }
+
+    #botao-sobre, #botao-atividades, #botao-eventos {
+        font-size: 0.8rem;
     }
 
     .card {
         flex-direction: column;
         height: auto;
-    }
-
-    .title-card1, .title-card2, .title-card3,
-    .desc-card1, .desc-card2, .desc-card3 {
-        font-size: 16px;
-    }
-
-    #button-card1, #button-card2, #button-card3 {
-        font-size: 16px;
     }
 
     #footer {
@@ -556,7 +498,35 @@ a {
 
     .icons {
         flex-direction: column;
-        padding-left: 0;
         gap: 10px;
+    }
+}
+
+ /* Responsividade para celular  */
+
+@media (max-width: 480px) {
+    #title-header {
+        font-size: 1.2rem;
+    }
+
+    #nav-header {
+        font-size: 0.8rem;
+    }
+
+    #desc-sobre, #desc-atividades, #desc-eventos {
+        font-size: 0.7rem;
+    }
+
+    #botao-sobre, #botao-atividades, #botao-eventos {
+        font-size: 0.7rem;
+    }
+
+    .card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #botao-endereco {
+        font-size: 0.8rem;
     }
 }
