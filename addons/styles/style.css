@@ -4,14 +4,12 @@
     box-sizing: border-box;
 }
 html, body {
-    height: 100%;
-    width: 100%;
-    font-size: 16px;
-
+    height: 100vh;
+    width: 100vw;
+    font-size: 2vw;
 }
 
 /* NAVBAR & HEADER  */
-
 
 #button-header {
     display: flex;
@@ -19,110 +17,95 @@ html, body {
     align-items: center;
     text-align: center;
     background-color: yellow;
-    border: 3px solid black;
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-left: 1000px;
-    width: 150px;
-    height: 50px;
+    border: 0.3vw solid black;
+    border-radius: 2vw;
+    margin-top: 2vh;
+    margin-left: 80vw;
+    width: 8vw;
+    height: 6vh;
 }
 #title-header {
-    margin-top: 30px;
-    margin-bottom: 16px;
-    font-size: 50px;
+    margin-top: 3vh;
+    margin-bottom: 1.6vh;
+    font-size: 4vw;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #nav-header {
-    font-size: 25px;
-    padding-top: 10px;
+    font-size: 2vw;
+    padding-top: 2vh;
     text-align: center;
     display: flex;
     justify-content: center;
-    gap: 70px;
-    margin: 10px 0;
+    gap: 3.6vw;
+    margin: 1vh 0;
     align-items: center;
 }
 a {
     text-decoration: none;
     color: black;
 }
-#img-instituto {
+#img-instituto, #sobre-instituto, #prefeitura, #dia-crianca {
     align-items: center;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    width: 80%;
-    height: 400px;
+    width: 100vw;
+    height: 100vh;
 }
-#foto-instituto {
-    margin-top: 20px;
+#foto-instituto, #titulo-sobre, #section-crianca, #section-prefeitura {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-color: gray;
-    width: 100%;
-    height: 100%
-}
-#legenda-foto {
-    font-size: 40px;
-    text-align: center;
-    margin-top: 10px;
+    width: 80vw;
+    height: 60vh;
 }
 
+#foto-instituto {
+    background-color: gray;
+}
+#legenda-foto {
+    font-size: 2vw;
+    text-align: center;
+    /* margin-top: 1vh; */
+}
 
 /* Parte: Sobre Nós  */
 
-
-
-#sobre-instituto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
+#sobre-nos {
+    background-color: yellow;
+    width: 80vw;
+    height: 60vh;
 }
-#title-sobre {
-    color: red;
-    font-size: 35px;
-    width: 100%;
-    margin-top: 100px;
-    padding-left: 100px;
 
-}
 #desc-sobre {
     color: red;
-    line-height: 30px;
-    margin-top: 25px;
-    font-size: 20px;
-    width: 350px;
-    padding: 20px;
-    padding-left: 100px;
+    line-height: 3vh;
+    font-size: 1vw;
+    width: 18vw;
+    padding: 2vh;
+    padding-left: 5vw;
     text-align: justify;
 }
-#sobre-nos{
-    background-color: rgb(223, 206, 94);
-    width: 80%;
-    height: 600px;
-}
 #nav-sobre {
-    padding-top: 10px;
+    padding-top: 1vh;
     display: flex;
-    padding-left: 120px;
-    width: 100%;
-    gap: 40px;
-    margin: 10px 0;
+    padding-left: 6vw;
+    width: 100vw;
+    gap: 2vw;
+    margin: 1vh 0;
     align-items: center;
 }
 #botao-sobre {
-    font-size: 20px;
+    font-size: 1vw;
     background-color: rgb(223, 206, 94);
-    width: 150px;
-    height: 70px;
-    border: 3px solid black;
-    border-radius: 10px;
-    padding: 10px 20px;
+    width: 8vw;
+    height: 7vh;
+    border: 0.3vw solid black;
+    border-radius: 1vw;
+    padding: 1vh 2vw;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     color: black;
@@ -131,31 +114,30 @@ a {
     align-items: center;
 }
 
-
 /* Parte: Nossas Atividades  */
 
 #nossas-atividades {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 2vh 0;
 }
 #title-atividades {
     color: black;
-    font-size: 35px;
-    width: 100%;
+    font-size: 1.8vw;
+    width: 100vw;
     text-align: center;
-    margin-top: 100px;
-    padding-left: 650px;
+    margin-top: 10vh;
+    padding-left: 34vw;
 }
 #desc-atividades {
     color: black;
-    line-height: 35px;
-    margin-top: 25px;
-    font-size: 20px;
-    width: 25%;
-    margin-left: 700px;
-    padding: 20px;
+    line-height: 3.5vh;
+    margin-top: 2.5vh;
+    font-size: 1vw;
+    width: 13vw;
+    margin-left: 36vw;
+    padding: 2vh;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -164,28 +146,28 @@ a {
 
 #atividades {
     background-color: lawngreen;
-    width: 80%;
-    height: 600px;
+    width: 80vw;
+    height: 60vh;
 }
 
 #nav-atividades {
-    padding-top: 10px;
+    padding-top: 1vh;
     display: flex;
-    padding-top: 40px;
-    padding-left: 750px;
-    width: 100%;
-    gap: 40px;
-    margin: 10px 0;
+    padding-top: 4vh;
+    padding-left: 39vw;
+    width: 100vw;
+    gap: 2vw;
+    margin: 1vh 0;
     align-items: center;
 }
 #botao-atividades {
-    font-size: 20px;
+    font-size: 1vw;
     background-color: lawngreen;
-    width: 150px;
-    height: 70px;
-    border: 3px solid black;
-    border-radius: 10px;
-    padding: 10px 20px;
+    width: 8vw;
+    height: 7vh;
+    border: 0.3vw solid black;
+    border-radius: 1vw;
+    padding: 1vh 2vw;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     color: black;
@@ -199,21 +181,20 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 2vh 0;
 }
 
 #eventos {
-    width: 80%;
-    height: 600px;
+    width: 80vw;
+    height: 60vh;
     background-color: salmon;
 }
 
 #title-eventos {
-    margin-top: 60px;
+    margin-top: 6vh;
     text-align: center;
     color: black;
-    font-size: 35px;
-
+    font-size: 1.8vw;
 }
 #desc {
     display: flex;
@@ -223,11 +204,11 @@ a {
 }
 #desc-eventos {
     color: black;
-    line-height: 35px;
-    margin-top: 35px;
-    font-size: 20px;
-    width: 40%;
-    padding: 20px;
+    line-height: 3.5vh;
+    margin-top: 3.5vh;
+    font-size: 1vw;
+    width: 21vw;
+    padding: 2vh;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -235,7 +216,7 @@ a {
 }
 
 #nav-eventos {
-    padding-top: 20px;
+    padding-top: 2vh;
     display: flex;
     align-items: center;
     justify-self: center;
@@ -243,12 +224,12 @@ a {
 }
 
 #botao-eventos {
-    font-size: 20px;
+    font-size: 1vw;
     background-color: salmon;
-    width: 150px;
-    height: 70px;
-    border: 3px solid black;
-    border-radius: 10px;
+    width: 8vw;
+    height: 7vh;
+    border: 0.3vw solid black;
+    border-radius: 1vw;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     color: black;
@@ -259,28 +240,26 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
-   
 }
 
 #titulos {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 200px;
+    width: 10vw;
+    height: 20vh;
     background-color: lightgray;
     text-align: center;
-    width: 80%;
-    height: 600px;
+    width: 100vw;
+    height: 60vh;
 }
 
 .card {
-    border: 2px solid black;
-    width: 330px;
-    gap: 20px; 
-    margin: 5px;
-    height: 600px;
+    border: 0.2vw solid black;
+    width: 26vw;
+    gap: 1vw; 
+    margin: 0.5vh;
+    height: 60vh;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -288,14 +267,15 @@ a {
 }
 
 .card-content1 , .card-content2 , .card-content3 {
-    height: 100%;
+    height: 100vh;
+    width: 26vw;
     background-color: plum;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 20vh;
 }
 .card-content2 {
     background-color: aqua;
@@ -305,43 +285,42 @@ a {
 }
 
 .title-card1 , .title-card2 , .title-card3 {
-    font-size: 30px;
+    font-size: 1.6vw;
     color: black;
-    line-height: 30px;
-    padding-left: 20px;
-    width: 80%;
+    line-height: 3vh;
+    padding-left: 1vw;
+    width: 20vw;
 }
 .desc-card1 , .desc-card2 , .desc-card3 {
-    font-size: 20px;
+    font-size: 1.5vw;
     color: black;
-    line-height: 20px;
-    padding-left: 30px;
-    margin-top: 40px;
+    line-height: 2vh;
+    padding-left: 1.5vw;
+    margin-top: 4vh;
     text-align: justify;
-    width: 80%;
+    width: 12vw;
 }
 .card1 , .card2 , .card3 {
-    font-size: 20px;
+    font-size: 1vw;
     color: black;
-    line-height: 30px;
-    padding-left: 30px;
-    margin-top: 30px;
+    line-height: 3vh;
+    padding-left: 1.5vw;
+    margin-top: 3vh;
     text-align: justify;
-    width: 80%;
+    width: 17vw;
 }
 #button-card1 , #button-card2 , #button-card3 {
     display: flex;
     justify-content: center;    
     align-items: center;
-    margin-top: 20px;
-    margin-left: 30px;
-    width: 100%;
-    height: 50px;
+    margin-top: 2vh;
+    width: 15vw;
+    height: 5vh;
     background-color: plum;
-    border: 2px solid black;   
-    border-radius: 10px;
+    border: 0.2vw solid black;   
+    border-radius: 1vw;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1vw;
 }
 #button-card2 {
     background-color: aqua;
@@ -351,9 +330,58 @@ a {
     background-color: orange
 }
 
+
+/* Section - Dia das Crianças  */
+
+#dia-crianca, #prefeitura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 60vh;
+    background-color: rgb(248, 78, 135);
+}
+#title-crianca {
+    color: white;
+    font-size: 1.5vw;
+    width: 100vw;
+    text-align: center;
+    margin-top: 10vh;
+    padding-left: 34vw;
+}
+
+#msg-crianca {
+    display: flex;
+    color: black;
+    line-height: 3.5vh;
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    margin-left: 16vw;
+}
+#nav-crianca {
+    padding-top: 1vh;
+    display: flex;
+    padding-left: 39vw;
+    width: 100vw;
+    gap: 2vw;
+    margin: 1vh 0;
+    align-items: center;
+}
+
+
+/* Section - Prefeitura  */
+
+#prefeitura {
+    background-color: salmon;
+}
+
+
+
 #logo-footer {
-    padding-left: 110px;
-    font-size: 30px;
+    padding-left: 5.7vw;
+    font-size: 1.6vw;
 }
 
 #footer {
@@ -362,66 +390,65 @@ a {
     justify-content: center;
     align-items: center;
     color: white;
-    margin-top: 50px;
+    margin-top: 5vh;
 }
 #contato {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     color: black;
-    padding: 20px;
+    padding: 2vh;
     background-color: yellow;
-    width: 100%;
-    height: 300px;
+    width: 100vw;
+    height: 30vh;
 }
 #contato-footer {
-    margin-top: 20px;
-    font-size: 18px;
+    margin-top: 2vh;
+    font-size: 0.9vw;
     color: black;
 }
 
 #link-contatos {
-    margin-top: 40px;
-    font-size: 20px;
+    margin-top: 4vh;
+    font-size: 1vw;
     text-decoration: none;
     color: black;
 }
 
 .icons {
     display: flex;
-    padding-top: 30px;
-    padding-left: 110px;
-    gap: 20px;
+    padding-top: 3vh;
+    padding-left: 5.7vw;
+    gap: 1vw;
 }
 
 #endereco {
-    width: 100%;
-    height: 300px;
+    width: 100vw;
+    height: 30vh;
     background-color: red;
 }
 #title-endereco {
-    width: 60%;
+    width: 60vw;
     color: white;
-    font-size: 25px;
-    padding-left: 110px;
-    margin-top: 40px;
+    font-size: 1.3vw;
+    padding-left: 5.7vw;
+    margin-top: 4vh;
 }
 
 #desc-endereco {
-    width: 60%;
+    width: 60vw;
     color: white;
-    font-size: 20px;
-    padding-left: 110px;
-    margin-top: 40px;
+    font-size: 1vw;
+    padding-left: 5.7vw;
+    margin-top: 4vh;
 }
 
 #nav-endereco {
     color: black;
     display: flex;
     justify-content: flex-end;
-    padding-right: 110px;
-    width: 100%;
+    padding-right: 5.7vw;
+    width: 100vw;
     align-items: center;
 }
 
@@ -430,61 +457,60 @@ a {
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
-    margin-top: -100px;
+    font-size: 1vw;
+    margin-top: -10vh;
     background-color: yellow;
-    width: 250px;
-    height: 70px;
-    border: 3px solid black;
-    border-radius: 10px;
+    width: 13vw;
+    height: 7vh;
+    border: 0.3vw solid black;
+    border-radius: 1vw;
     cursor: pointer;
     color: black;
     text-align: center;
 }
 
-
 /* Media Queries */
 @media (max-width: 1024px) {
     #title-header {
-        font-size: 2rem;
+        font-size: 2vw;
     }
 
     #nav-header {
-        font-size: 1rem;
-        gap: 10px;
+        font-size: 1vw;
+        gap: 1vw;
     }
 
     #desc-sobre, #desc-atividades, #desc-eventos {
-        font-size: 0.9rem;
+        font-size: 0.9vw;
     }
 
     #botao-sobre, #botao-atividades, #botao-eventos {
-        width: 100%;
+        width: 100vw;
         height: auto;
-        font-size: 0.9rem;
+        font-size: 0.9vw;
     }
 
     .card {
-        width: 100%;
+        width: 100vw;
     }
 }
 
 @media (max-width: 768px) {
     #title-header {
-        font-size: 1.5rem;
+        font-size: 1.5vw;
     }
 
     #nav-header {
         flex-direction: column;
-        gap: 10px;
+        gap: 1vw;
     }
 
     #desc-sobre, #desc-atividades, #desc-eventos {
-        font-size: 0.8rem;
+        font-size: 0.8vw;
     }
 
     #botao-sobre, #botao-atividades, #botao-eventos {
-        font-size: 0.8rem;
+        font-size: 0.8vw;
     }
 
     .card {
@@ -498,7 +524,7 @@ a {
 
     .icons {
         flex-direction: column;
-        gap: 10px;
+        gap: 1vw;
     }
 }
 
@@ -506,27 +532,27 @@ a {
 
 @media (max-width: 480px) {
     #title-header {
-        font-size: 1.2rem;
+        font-size: 1.2vw;
     }
 
     #nav-header {
-        font-size: 0.8rem;
+        font-size: 0.8vw;
     }
 
     #desc-sobre, #desc-atividades, #desc-eventos {
-        font-size: 0.7rem;
+        font-size: 0.7vw;
     }
 
     #botao-sobre, #botao-atividades, #botao-eventos {
-        font-size: 0.7rem;
+        font-size: 0.7vw;
     }
 
     .card {
-        width: 100%;
-        padding: 10px;
+        width: 100vw;
+        padding: 1vw;
     }
 
     #botao-endereco {
-        font-size: 0.8rem;
+        font-size: 0.8vw;
     }
 }
