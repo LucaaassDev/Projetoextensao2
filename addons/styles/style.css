@@ -47,7 +47,7 @@ a {
     text-decoration: none;
     color: black;
 }
-#img-instituto, #sobre-instituto, #prefeitura, #dia-crianca {
+#img-instituto, #sobre-instituto{
     align-items: center;
     margin: 0 auto;
     display: flex;
@@ -55,7 +55,7 @@ a {
     width: 100vw;
     height: 100vh;
 }
-#foto-instituto, #titulo-sobre, #section-crianca, #section-prefeitura {
+#foto-instituto, #titulo-sobre {
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -81,13 +81,17 @@ a {
 }
 
 #desc-sobre {
-    color: red;
+    color: #e94e1b;
+    font-family: 'Fredoka', sans-serif;
     line-height: 3vh;
-    font-size: 1vw;
-    width: 18vw;
-    padding: 2vh;
-    padding-left: 5vw;
-    text-align: justify;
+    font-size: 1.5vw;
+    width: 32vw;
+    height: 32vh;
+    padding-left: 6vw;
+    padding-top: 6vh;
+    text-align: left;
+    background: none;
+    border: none;
 }
 #nav-sobre {
     padding-top: 1vh;
@@ -98,23 +102,59 @@ a {
     margin: 1vh 0;
     align-items: center;
 }
-#botao-sobre {
-    font-size: 1vw;
-    background-color: rgb(223, 206, 94);
-    width: 8vw;
-    height: 7vh;
-    border: 0.3vw solid black;
-    border-radius: 1vw;
-    padding: 1vh 2vw;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    color: black;
-    text-align: center;
+.ponto, .ponto-atividades, .ponto-crianca, .ponto-prefeitura {
+    width: 1vw;
+    height: 1vw;
+    background-color: #e94e1b;
+    border-radius: 50%;
+    display: inline-block;
+}
+#botao-sobre, #botao-atividades {
+    display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 6vw;
+    background-color: #ffe066;
+    width: 18vw;
+    height: 7vh;
+    border: none;
+    border-radius: 1.5vw;
+    transition: background-color 0.3s, color 0.3s;
+    color: #e94e1b;
+    text-align: center;
+    gap: 2vw;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
 
 /* Parte: Nossas Atividades  */
+
+#botao-atividades, #botao-crianca, #botao-prefeitura {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vw;
+    background-color: lawngreen;
+    width: 18vw;
+    height: 7vh;
+    border: none;
+    margin-left: 8vw;
+    margin-bottom: 15vh;
+    border-radius: 1.5vw;
+    transition: background-color 0.3s, color 0.3s;
+    color: #000000;
+    text-align: center;
+    gap: 2vw;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.ponto-atividades {
+    width: 1vw;
+    height: 1vw;
+    background-color: #000000;
+    border-radius: 50%;
+    display: inline-block;
+}
 
 #nossas-atividades {
     display: flex;
@@ -122,6 +162,7 @@ a {
     align-items: center;
     margin: 2vh 0;
 }
+
 #title-atividades {
     color: black;
     font-size: 1.8vw;
@@ -130,12 +171,15 @@ a {
     margin-top: 10vh;
     padding-left: 34vw;
 }
+
 #desc-atividades {
     color: black;
     line-height: 3.5vh;
-    margin-top: 2.5vh;
-    font-size: 1vw;
-    width: 13vw;
+    margin-top: 15vh;
+    font-size: 1.5vw;
+    width: 40vw;
+    height: 40vh;
+    padding-left: 2vw;
     margin-left: 36vw;
     padding: 2vh;
     display: flex;
@@ -160,23 +204,9 @@ a {
     margin: 1vh 0;
     align-items: center;
 }
-#botao-atividades {
-    font-size: 1vw;
-    background-color: lawngreen;
-    width: 8vw;
-    height: 7vh;
-    border: 0.3vw solid black;
-    border-radius: 1vw;
-    padding: 1vh 2vw;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    color: black;
-    text-align: center;
-    position: absolute;
-}
+
 
 /* Parte: Nossos Eventos */
-
 #nossos-eventos {
     display: flex;
     justify-content: center;
@@ -185,56 +215,78 @@ a {
 }
 
 #eventos {
+    margin-top: 40vh;
     width: 80vw;
-    height: 60vh;
-    background-color: salmon;
+    height: 70vh;
+    background-color: #f84e87;
+    border-radius: 0.5vw;
+    position: relative;
+    overflow: hidden;
 }
 
 #title-eventos {
     margin-top: 6vh;
     text-align: center;
     color: black;
-    font-size: 1.8vw;
+    font-size: 2.6vw;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.05em;
 }
+
 #desc {
     display: flex;
-    text-align: center;
     justify-content: center;
     align-items: center;
+    margin-top: 3vh;
 }
+
 #desc-eventos {
     color: black;
     line-height: 3.5vh;
-    margin-top: 3.5vh;
-    font-size: 1vw;
-    width: 21vw;
-    padding: 2vh;
+    margin-top: 0;
+    font-size: 1.3vw;
+    width: 38vw;
+    padding: 0;
     display: flex;
     justify-content: center;
     text-align: center;
     align-self: center;
+    font-family: 'Fredoka', sans-serif;
 }
 
 #nav-eventos {
-    padding-top: 2vh;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-self: center;
-    text-align: center;
+    margin-top: 4vh;
 }
 
 #botao-eventos {
-    font-size: 1vw;
-    background-color: salmon;
-    width: 8vw;
+    font-size: 1.3vw;
+    background-color: #f84e87;
+    width: 14vw;
     height: 7vh;
-    border: 0.3vw solid black;
+    border: 0.25vw solid black;
     border-radius: 1vw;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     color: black;
     text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: bold;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
+
+
+
+
+
+/* Section -Cartas  */
+
+
+
 #titulos-cartas {
     display: flex;
     justify-content: center;
@@ -333,51 +385,99 @@ a {
 
 /* Section - Dia das Crianças  */
 
-#dia-crianca, #prefeitura {
+
+#dia-crianca {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#section-crianca {
+    display: flex;
+    flex-direction: column;
     width: 80vw;
     height: 60vh;
-    background-color: rgb(248, 78, 135);
+    background-color: salmon;
 }
 #title-crianca {
-    color: white;
-    font-size: 1.5vw;
-    width: 100vw;
-    text-align: center;
-    margin-top: 10vh;
-    padding-left: 34vw;
-}
-
-#msg-crianca {
-    display: flex;
+    margin-left: 10vw;
+    font-size: 2.5vw;
     color: black;
-    line-height: 3.5vh;
-    width: 40vw;
-    justify-content: center;
-    align-items: center;
-    font-size: 2vw;
-    margin-left: 16vw;
+    margin-bottom: 4vh;
+    margin-top: 4vh;
+}
+#desc-crianca {
+    width: 30vw;
+    margin-left: 10vw;
+    font-size: 1.5vw;
 }
 #nav-crianca {
-    padding-top: 1vh;
     display: flex;
-    padding-left: 39vw;
-    width: 100vw;
-    gap: 2vw;
-    margin: 1vh 0;
-    align-items: center;
+    margin-left: 6vw;
+    margin-top: 6vh;
 }
-
+#botao-crianca {
+    color: black;
+    background-color: salmon;
+}
+#ponto-crianca {
+    width: 1vw;
+    height: 1vw;
+    color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
 
 /* Section - Prefeitura  */
 
 #prefeitura {
-    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+#section-prefeitura {
+    width: 80vw;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
 
+    margin-top: 10vh;
+    background-color: darksalmon;
+}
+
+#title-prefeitura {
+    text-align: right;
+    padding-top: 10vh;
+    margin-right: 10vw;
+    font-size: 2.5vw;
+    color: black;
+    margin-bottom: 4vh;
+    margin-top: 7vh;
+}
+
+#msg-prefeitura {
+    width: 30vw;
+    font-size: 1.5vw;
+    text-align: left;
+    margin-left: 50vw;
+}
+#botao-prefeitura {
+    color: black;
+    background-color: darksalmon;
+    margin-left: 50vw;
+    margin-top: 6vh;
+}
+.ponto-prefeitura {
+    background-color: black;
+    width: 1vw;
+    height: 1vw;
+    color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Section - Footer  */
 
 #logo-footer {
     padding-left: 5.7vw;
