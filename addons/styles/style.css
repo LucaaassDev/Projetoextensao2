@@ -22,6 +22,7 @@
 html, body {
     font-size: 2vw;
     font-family: 'Childos';
+    scroll-behavior: smooth;
 }
 
 body{
@@ -32,7 +33,6 @@ body{
     align-items: center;
     justify-content: space-between;
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 /* Classes Gerais */
@@ -72,6 +72,33 @@ a {
 
 .botao-adote-atleta:hover{
     transform: scale(1.1);
+}
+
+/* BOTÃO TOPO */
+
+#botao-topo{
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1001;
+    bottom: 1%;
+    right: 2%;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    transition: 0.5s ease-in;
+}
+
+#botao-topo.visivel{
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /* Logo */

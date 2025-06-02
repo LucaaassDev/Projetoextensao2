@@ -10,6 +10,7 @@ sliders.forEach(function(sliderDiv){
     const botaoDireita = container.querySelector('.seta-direita-slider');
     const botaoInicio = container.querySelector('.botao-slider-inicio')
     const totalSlides = slides.length
+
     let sliderAtual = 0
 
     function atualizarSeletores(){
@@ -68,6 +69,8 @@ sliders.forEach(function(sliderDiv){
             atualizarSlider()
         })
     }
+
+
 
     atualizarSeletores()
 })
