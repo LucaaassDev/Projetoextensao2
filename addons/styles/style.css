@@ -1,433 +1,271 @@
+@font-face{
+    font-family: 'Childos';
+    src: url('fonts/Childos Arabic.otf')
+}
+
+@font-face{
+    font-family: 'Childos Symbols';
+    src: url('fonts/Childos Arabic Old.otf')
+}
+
+:root{
+    --fonte1 : 'Childos';
+    --fonte2 : 'Childos Symbols'
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html, body {
-    height: 100vh;
-    width: 100vw;
     font-size: 2vw;
+    font-family: 'Childos';
 }
 
-/* NAVBAR & HEADER  */
+body{
+    height: 100%;
+    display: flex;
+    /* gap: 10vh; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 
-#button-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: yellow;
-    border: 0.3vw solid black;
-    border-radius: 2vw;
-    margin-top: 2vh;
-    margin-left: 80vw;
-    width: 8vw;
-    height: 6vh;
-}
-#title-header {
-    margin-top: 3vh;
-    margin-bottom: 1.6vh;
-    font-size: 4vw;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#nav-header {
-    font-size: 2vw;
-    padding-top: 2vh;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    gap: 3.6vw;
-    margin: 1vh 0;
-    align-items: center;
-}
+/* Classes Gerais */
 a {
     text-decoration: none;
     color: black;
 }
-#img-instituto, #sobre-instituto{
-    align-items: center;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
+
+.margin-top{
+    margin-top: 15vh;
+}
+
+/* BOTÃO ADOTE UM ATLETA */
+
+.botao-adote-atleta{
+    border: 3px black solid;
+    color: black;
+    background-color: #ffde59;
+    padding: 1%;
+    border-radius: 1rem 1rem 1rem 1rem;
+    z-index: 1000;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.botao-adote-atleta-fixo{
+    position: fixed;
+    right: 10%;
+    top: 1%;
+}
+
+.botao-adote-atleta-footer{
+    position: absolute;
+    right: 10%;
+}
+
+.botao-adote-atleta:hover{
+    transform: scale(1.1);
+}
+
+/* Logo */
+
+.logo-header {
+    height: 80%;
+    width: auto;
+}
+
+.logo-header img{
+    height: 100%;
+}
+
+.logo-footer{
+    height: 40%;
+    width: auto;
+}
+
+.logo-footer img{
+    height: 100%;
+}
+
+/* Header  */
+
+header {
     width: 100vw;
-    height: 100vh;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
 }
-#foto-instituto, #titulo-sobre {
+
+/* Header - Menu */
+
+#menu {
+    width: 80%;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 5% 0 5%;
+}
+
+#menu a{
+    transition: 0.5s ease;
+}
+#menu a:hover{
+    transform: scale(1.1);
+}
+
+/* Section -  Main Foto Instituto */
+
+#main-foto-instituto{
+    margin-top: 5vh;
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
     width: 80vw;
-    height: 60vh;
+    height: auto;
 }
 
-#foto-instituto {
-    background-color: gray;
-}
-#legenda-foto {
-    font-size: 2vw;
-    text-align: center;
-    /* margin-top: 1vh; */
+#main-foto-instituto figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
 }
 
-/* Parte: Sobre Nós  */
+#main-foto-instituto figure img{
+    width: 100%;
+}
 
-#sobre-nos {
-    background-color: yellow;
+/* Section - Sobre Nós  */
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffde59;
     width: 80vw;
-    height: 60vh;
+    height: 90vh;
+    overflow-x: hidden;
 }
 
-#desc-sobre {
-    color: #e94e1b;
-    font-family: 'Fredoka', sans-serif;
-    line-height: 3vh;
-    font-size: 1.5vw;
-    width: 32vw;
-    height: 32vh;
-    padding-left: 6vw;
-    padding-top: 6vh;
-    text-align: left;
-    background: none;
-    border: none;
-}
-#nav-sobre {
-    padding-top: 1vh;
-    display: flex;
-    padding-left: 6vw;
-    width: 100vw;
-    gap: 2vw;
-    margin: 1vh 0;
-    align-items: center;
-}
-.ponto, .ponto-atividades, .ponto-crianca, .ponto-prefeitura {
-    width: 1vw;
-    height: 1vw;
-    background-color: #e94e1b;
-    border-radius: 50%;
-    display: inline-block;
-}
-#botao-sobre, #botao-atividades {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 6vw;
-    background-color: #ffe066;
-    width: 18vw;
-    height: 7vh;
-    border: none;
-    border-radius: 1.5vw;
-    transition: background-color 0.3s, color 0.3s;
-    color: #e94e1b;
-    text-align: center;
-    gap: 2vw;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-}
-
-/* Parte: Nossas Atividades  */
-
-#botao-atividades, #botao-crianca, #botao-prefeitura {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 6vw;
-    background-color: lawngreen;
-    width: 18vw;
-    height: 7vh;
-    border: none;
-    margin-left: 8vw;
-    margin-bottom: 15vh;
-    border-radius: 1.5vw;
-    transition: background-color 0.3s, color 0.3s;
-    color: #000000;
-    text-align: center;
-    gap: 2vw;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-}
-
-.ponto-atividades {
-    width: 1vw;
-    height: 1vw;
-    background-color: #000000;
-    border-radius: 50%;
-    display: inline-block;
-}
+/* Section - Nossas Atividades  */
 
 #nossas-atividades {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2vh 0;
-}
-
-#title-atividades {
-    color: black;
-    font-size: 1.8vw;
-    width: 100vw;
-    text-align: center;
-    margin-top: 10vh;
-    padding-left: 34vw;
-}
-
-#desc-atividades {
-    color: black;
-    line-height: 3.5vh;
-    margin-top: 15vh;
-    font-size: 1.5vw;
-    width: 40vw;
-    height: 40vh;
-    padding-left: 2vw;
-    margin-left: 36vw;
-    padding: 2vh;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-self: center;
-}
-
-#atividades {
-    background-color: lawngreen;
+    flex-direction: column;
+    background-color: #89ff59;
     width: 80vw;
-    height: 60vh;
+    height: 90vh;
+    overflow-x: hidden;
 }
 
-#nav-atividades {
-    padding-top: 1vh;
-    display: flex;
-    padding-top: 4vh;
-    padding-left: 39vw;
-    width: 100vw;
-    gap: 2vw;
-    margin: 1vh 0;
-    align-items: center;
-}
+/* Section - Nossos Eventos */
 
-
-/* Parte: Nossos Eventos */
 #nossos-eventos {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2vh 0;
-}
-
-#eventos {
-    margin-top: 40vh;
+    flex-direction: column;
+    background-color: #ee738f;
     width: 80vw;
-    height: 70vh;
-    background-color: #f84e87;
-    border-radius: 0.5vw;
-    position: relative;
-    overflow: hidden;
+    height: 90vh;
+    overflow-x: hidden;
 }
 
-#title-eventos {
-    margin-top: 6vh;
-    text-align: center;
-    color: black;
-    font-size: 2.6vw;
-    font-family: 'Fredoka', sans-serif;
-    font-weight: bold;
-    letter-spacing: 0.05em;
-}
+/* Section - Nossos Parceiros */
 
-#desc {
+#nossos-parceiros{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3vh;
+    flex-direction: column;
+    background-color: #bd969f;
+    width: 80vw;
+    height: 90vh;
+    overflow-x: hidden;
 }
-
-#desc-eventos {
-    color: black;
-    line-height: 3.5vh;
-    margin-top: 0;
-    font-size: 1.3vw;
-    width: 38vw;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-self: center;
-    font-family: 'Fredoka', sans-serif;
-}
-
-#nav-eventos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4vh;
-}
-
-#botao-eventos {
-    font-size: 1.3vw;
-    background-color: #f84e87;
-    width: 14vw;
-    height: 7vh;
-    border: 0.25vw solid black;
-    border-radius: 1vw;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    color: black;
-    text-align: center;
-    font-family: 'Fredoka', sans-serif;
-    font-weight: bold;
-    margin: 0 auto;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-}
-
-
-
-
 
 /* Section -Cartas  */
 
-
-
-#titulos-cartas {
+#conteudos-relacionados {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: 80vh;
 }
 
-#titulos {
+.cards{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10vw;
-    height: 20vh;
-    background-color: lightgray;
-    text-align: center;
-    width: 100vw;
-    height: 60vh;
-}
-
-.card {
-    border: 0.2vw solid black;
-    width: 26vw;
-    gap: 1vw; 
-    margin: 0.5vh;
-    height: 60vh;
-    display: inline-flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    height: 100%;
+    padding-bottom: 3%;
+    border-radius: 1rem;
 }
 
-.card-content1 , .card-content2 , .card-content3 {
-    height: 100vh;
-    width: 26vw;
-    background-color: plum;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 20vh;
-}
-.card-content2 {
-    background-color: aqua;
-}
-.card-content3 {
-    background-color: orange;
+.cards figure{
+    height: 40%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1rem 1rem 0 0;
 }
 
-.title-card1 , .title-card2 , .title-card3 {
-    font-size: 1.6vw;
-    color: black;
-    line-height: 3vh;
-    padding-left: 1vw;
-    width: 20vw;
+.cards figure img{
+    width: 100%;
+    height: auto;
 }
-.desc-card1 , .desc-card2 , .desc-card3 {
-    font-size: 1.5vw;
-    color: black;
-    line-height: 2vh;
-    padding-left: 1.5vw;
-    margin-top: 4vh;
+
+.cards-textos{
     text-align: justify;
-    width: 12vw;
+    padding: 0 5% 0 5%;
+    font-weight: bold;
 }
-.card1 , .card2 , .card3 {
-    font-size: 1vw;
-    color: black;
-    line-height: 3vh;
-    padding-left: 1.5vw;
-    margin-top: 3vh;
-    text-align: justify;
-    width: 17vw;
+
+.cards-textos h3{
+    font-size: 1rem;
 }
-#button-card1 , #button-card2 , #button-card3 {
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-    margin-top: 2vh;
-    width: 15vw;
-    height: 5vh;
-    background-color: plum;
-    border: 0.2vw solid black;   
-    border-radius: 1vw;
+
+.cards-textos p{
+    font-size: 0.5rem;
+}
+
+.cards .botao{
+    text-align: center;
+    width: 80%;
+    border: 2px solid black;
+    padding: 5%;
+    border-radius: 1rem;
+    transition: 0.5s ease;
     cursor: pointer;
-    font-size: 1vw;
-}
-#button-card2 {
-    background-color: aqua;
+    font-weight: bolder;
 }
 
-#button-card3 {
-    background-color: orange
+.cards .botao:hover{
+    transform: scale(1.1);
 }
 
-
-/* Section - Dia das Crianças  */
-
-
-#dia-crianca {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.card1{
+    background-color: #c6afaf;
 }
 
-#section-crianca {
-    display: flex;
-    flex-direction: column;
-    width: 80vw;
-    height: 60vh;
-    background-color: salmon;
-}
-#title-crianca {
-    margin-left: 10vw;
-    font-size: 2.5vw;
-    color: black;
-    margin-bottom: 4vh;
-    margin-top: 4vh;
-}
-#desc-crianca {
-    width: 30vw;
-    margin-left: 10vw;
-    font-size: 1.5vw;
-}
-#nav-crianca {
-    display: flex;
-    margin-left: 6vw;
-    margin-top: 6vh;
-}
-#botao-crianca {
-    color: black;
-    background-color: salmon;
-}
-#ponto-crianca {
-    width: 1vw;
-    height: 1vw;
-    color: black;
-    border-radius: 50%;
-    display: inline-block;
+.card2{
+    background-color: #50cbc8;
 }
 
+.card3{
+    background-color: #e6bb73;
+}
 /* Section - Prefeitura  */
 
 #prefeitura {
@@ -436,53 +274,7 @@ a {
     align-items: center;
 }
 
-#section-prefeitura {
-    width: 80vw;
-    height: 60vh;
-    justify-content: center;
-    align-items: center;
-
-    margin-top: 10vh;
-    background-color: darksalmon;
-}
-
-#title-prefeitura {
-    text-align: right;
-    padding-top: 10vh;
-    margin-right: 10vw;
-    font-size: 2.5vw;
-    color: black;
-    margin-bottom: 4vh;
-    margin-top: 7vh;
-}
-
-#msg-prefeitura {
-    width: 30vw;
-    font-size: 1.5vw;
-    text-align: left;
-    margin-left: 50vw;
-}
-#botao-prefeitura {
-    color: black;
-    background-color: darksalmon;
-    margin-left: 50vw;
-    margin-top: 6vh;
-}
-.ponto-prefeitura {
-    background-color: black;
-    width: 1vw;
-    height: 1vw;
-    color: black;
-    border-radius: 50%;
-    display: inline-block;
-}
-
 /* Section - Footer  */
-
-#logo-footer {
-    padding-left: 5.7vw;
-    font-size: 1.6vw;
-}
 
 #footer {
     display: flex;
@@ -492,90 +284,105 @@ a {
     color: white;
     margin-top: 5vh;
 }
-#contato {
+
+#logo-footer {
+    padding-left: 5.7vw;
+    font-size: 1.6vw;
+}
+
+/* Section - Contatos */
+
+#section-contato {
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: #ffde59;
+    width: 100%;
+    height: 50vh;
+}
+
+#section-contato-largura{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#section-contato-largura> div{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: black;
-    padding: 2vh;
-    background-color: yellow;
-    width: 100vw;
-    height: 30vh;
 }
-#contato-footer {
-    margin-top: 2vh;
-    font-size: 0.9vw;
-    color: black;
+
+#vetor-contato{
+    display: flex;
+    justify-content: right;
 }
 
 #link-contatos {
-    margin-top: 4vh;
-    font-size: 1vw;
-    text-decoration: none;
-    color: black;
-}
-
-.icons {
+    height: 40%;
     display: flex;
-    padding-top: 3vh;
-    padding-left: 5.7vw;
-    gap: 1vw;
+    flex-direction: column;
+
 }
 
-#endereco {
-    width: 100vw;
-    height: 30vh;
-    background-color: red;
-}
-#title-endereco {
-    width: 60vw;
-    color: white;
-    font-size: 1.3vw;
-    padding-left: 5.7vw;
-    margin-top: 4vh;
-}
-
-#desc-endereco {
-    width: 60vw;
-    color: white;
-    font-size: 1vw;
-    padding-left: 5.7vw;
-    margin-top: 4vh;
-}
-
-#nav-endereco {
-    color: black;
+#link-contatos a{
     display: flex;
-    justify-content: flex-end;
-    padding-right: 5.7vw;
-    width: 100vw;
+    height: 50%;
+    gap: 5%;
+    width: fit-content;
     align-items: center;
+    transition: 0.5s ease;
 }
 
-#botao-endereco {
+#link-contatos a:hover{
+    transform: translateX(10%);
+}
+
+.social-icons{
+    width: 10%;
+    /* width: 32px; */
+    height: auto;
+    /* height: 32px; */
+}
+
+/* Section - Endereço */
+
+#section-endereco {
     display: flex;
-    text-align: center;
     justify-content: center;
+    width: 100%;
+    height: 30vh;
+    background-color: #f82323;
+}
+
+#section-endereco > div{
+    width: 80%;
+    display: flex;
     align-items: center;
-    font-size: 1vw;
-    margin-top: -10vh;
-    background-color: yellow;
-    width: 13vw;
-    height: 7vh;
-    border: 0.3vw solid black;
-    border-radius: 1vw;
-    cursor: pointer;
-    color: black;
-    text-align: center;
+}
+
+.endereco-textos{
+    color: white;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#endereco{
+    font-size: 0.8rem;
+}
+
+#disclaimer{
+    font-size: 0.4rem;
 }
 
 /* Media Queries */
 @media (max-width: 1024px) {
-    #title-header {
-        font-size: 2vw;
-    }
 
-    #nav-header {
+    #menu {
         font-size: 1vw;
         gap: 1vw;
     }
@@ -584,8 +391,7 @@ a {
         font-size: 0.9vw;
     }
 
-    #botao-sobre, #botao-atividades, #botao-eventos {
-        width: 100vw;
+    #botao-sobre, #botao-atividades{
         height: auto;
         font-size: 0.9vw;
     }
@@ -596,20 +402,17 @@ a {
 }
 
 @media (max-width: 768px) {
-    #title-header {
-        font-size: 1.5vw;
-    }
 
-    #nav-header {
+    #menu {
         flex-direction: column;
         gap: 1vw;
     }
 
-    #desc-sobre, #desc-atividades, #desc-eventos {
+    #desc-sobre, #desc-atividades{
         font-size: 0.8vw;
     }
 
-    #botao-sobre, #botao-atividades, #botao-eventos {
+    #botao-sobre, #botao-atividades{
         font-size: 0.8vw;
     }
 
@@ -631,11 +434,8 @@ a {
  /* Responsividade para celular  */
 
 @media (max-width: 480px) {
-    #title-header {
-        font-size: 1.2vw;
-    }
 
-    #nav-header {
+    #menu {
         font-size: 0.8vw;
     }
 
@@ -643,7 +443,7 @@ a {
         font-size: 0.7vw;
     }
 
-    #botao-sobre, #botao-atividades, #botao-eventos {
+    #botao-sobre, #botao-atividades{
         font-size: 0.7vw;
     }
 
